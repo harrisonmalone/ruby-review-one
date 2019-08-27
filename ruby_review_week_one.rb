@@ -14,7 +14,7 @@
 
 # d.
 # counter = 0
-# count += 1
+# counter += 1
 
 # e.
 # hello = "hello there"
@@ -23,7 +23,8 @@
 # end 
 
 # f.
-# array_name.each do | item |
+# some_array = [ 1, 2, 3 ]
+# some_array.each do | item |
 #   puts item
 # end 
 
