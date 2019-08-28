@@ -23,7 +23,7 @@ an array with the integers 1 through 3 inside of it
 a variable called other_var assigned to the string "hi" and another variable assigned to the variable called other_var
 
 
-# d.
+# d
 # counter = 0
 # counter += 1
 
