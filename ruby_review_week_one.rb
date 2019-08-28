@@ -100,4 +100,14 @@ end
 # 17. Name one method you could use to access the last element in an array 
 
 # array.pop or array[-1]
-p word_array.pop
+# p word_array.pop
+
+def last_number(array)
+    array.each_with_index do |value,index|
+        if index == (array.length)-1
+            p value
+        end
+    end
+end
+
+last_number(word_array)
