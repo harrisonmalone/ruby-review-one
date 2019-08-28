@@ -4,17 +4,26 @@
 
 # a.
 # this_variable = 5
+# changing(or defining) the value of the this_variable as 5. this is an integer.
 
 # b.
 # some_array = [ 1, 2, 3 ]
 
+# changing (or defining) the value of a variable some_array as an array, with three values or 1, 2 amd 3. These are integers
+
 # c.
 # other_var = "hi"
 # one_var = other_var
+#  this is defining a variable as named as other_var having a value of "hi" as a string.
+# then defining another variable named one_var as having the value of the other variable other_var
 
 # d.
 # counter = 0
 # counter += 1
+
+# defining variale counter as having value of 0
+
+# redifining variable counter  as having a new value of the old value plus 1 (overwriting existing value)
 
 # e.
 # hello = "hello there"
@@ -22,43 +31,106 @@
 #   puts "hello"
 # end 
 
+# defining variable named hello as having value of "hello there" as a string
+# apllying the logic that if the variable named hello does not have a value that is equal to the string "hello", that the string "hello" will be displayed on the terminal (but the value "hello" will not be returned)
+
 # f.
 # some_array = [ 1, 2, 3 ]
 # some_array.each do | item |
 #   puts item
 # end 
+ 
+# defining a variable named some_array as having a value that is an array, with the item values of 1,2,3 and 4.
+# this is defining each item in the array (a value and an index pair) as being referable to as item and then iterating through the array and diplaying every item refered to as item, on the terminal
 
 # g.
 # while counter < 150 do
 #   puts "hello"
 # end 
 
+# this is a while loop. it doesn't work without the variable named counter. but the counter variable would probs have an integer value. its saying that as long as the counter value is less than 150, display "hello" on the terminal. because there is nothing between the words *while* and *end* that changes the value of counter, the string "hello" would keep being displayed on the terminal. 
+
 # 2. Use string interpolation and the variable my_string = "Fred" to print to output the string "My name is Fred"
+
+my_string = "Fred"
+p "My name is #{my_string}"
+
+# my_statement = "My name is #{my_string}"
+
+# p my_statement
 
 # 3. Give one method to remove whitespace from user input in Ruby
 
+# .strip
+
 # 4. What method would you use to get input from a user?
 
+# gets
+
 # 5. What result would you get in pry or IRB for this equation: 2 + 20 / 7 ?
+# 4 - becuase integers not floats and bodmas
 
 # 6. What result would you get in pry or IRB for this equation: 2 + 7 % 3 ?
-
+# 3
 # 7. Assign an empty string to a variable of any name
+#  any_name =""
 
 # 8. Describe two ways you can loop through an array?
 
+# you can create a for loop. you can use .each or . map
+
+# if you wanted to use .each: you call the array; add the method (array.each);write do for some reason; and then put some pipes||. a value goes between the pipes that is what you want to specify each item in the array as being one of, or as being referred to. for example for an array containing things that stood for different people (such as their names) which was named people, it would be people.each do |person|
+# then you can operate (?) on or transform each item in the array by calling the specifer *person* and then applying whatever logic or methods or whatever you want to.
+# this will create a new array with the transformed values, but wont actually store it unless you put it in a variable by defining one as having the value of the loop we just created (by putting *variable_name  =* before people.each do etc. )
+
+# another way is to use .map method. which does the same thing as above but returns the new array which i don't get 100% what that means yet. something to do with the computer holding the info in RAM maybe
+
+
 # 9. How could you put the number 6 on the end of the array number_array?
+# number_array.push(6)
 
 # 11. What name do we give to the Ruby objects denoted by true and false?
 
+# boolean values
+
 # 12. Give a brief description of coercion in Ruby with an example?
+
+# i'm not sure what coercion means. 
 
 # 13. What does Ruby coerce nil to in an if statement?
 
+# im gonna say false
+
 # 14.  Assign the string “hello” to a variable called some_var
+
+some_var = "hello"
 
 # 15. Take the variable from Question 14, and use an inbuilt Ruby method to turn it into an array where each character in the string is now an element in the array.
 
+some_var_split = some_var.split
+
 # 16.  Using that array that you have created (or assume you have an array of single characters), make a loop and in that loop print out each letter from the array.
+result = []
+
+some_var_split_split = some_var_split.each do |item|
+    #results.push(item.split)
+    p item.split
+
+end
+
+var = some_var_split_split.pop
+
+p  new_var = var.to_s
+
+p new_var.split
+# p some_var_split_split = some_var_split.split
+
+# p some_var_split_split
+
+
+# can't figure it out
+
 
 # 17. Name one method you could use to access the last element in an array 
+
+.pop
