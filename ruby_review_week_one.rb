@@ -5,6 +5,8 @@
 # a.
 # this_variable = 5
 
+# the integer 5 is assigned to the variable which is named this_variable
+
 # b.
 # some_array = [ 1, 2, 3 ]
 
