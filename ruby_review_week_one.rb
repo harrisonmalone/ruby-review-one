@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # You may NOT use Google. These questions are just to test where you are at. Get through as many of these as you can. If you don’t get through all of them it’s ok - they are designed to take longer than the available time. If you can’t remember a bit of code, write the pseudo-code that represents what you would write your Ruby code.
 
 # 1. Describe in words what is happening in the following code:
@@ -5,60 +7,114 @@
 # a.
 # this_variable = 5
 
+# assign value 5 to the variable "this_variable"
+
 # b.
 # some_array = [ 1, 2, 3 ]
+
+# "some_array" variable array has three values of "1,2,3"
 
 # c.
 # other_var = "hi"
 # one_var = other_var
 
+# assign string "hi" to "other_var" and then assign "other_var" to "one_var"
+
 # d.
 # counter = 0
 # counter += 1
+
+# declare counter variable and assign 0 to it
+# add one to the counter and reassign the result to counter
 
 # e.
 # hello = "hello there"
 # if hello != "hello"
 #   puts "hello"
-# end 
+# end
+
+# assign "hello there" to hello variable
+# check if the variable hello is not equal to the string "hello"
+# if not equivalent then print "hello"
 
 # f.
 # some_array = [ 1, 2, 3 ]
 # some_array.each do | item |
 #   puts item
-# end 
+# end
+
+# declare an array of some_array with three variables
+# use the each method on some_array and pipe the result into a block
+# within the block put the result each time from the each method loop
 
 # g.
 # while counter < 150 do
 #   puts "hello"
-# end 
+# end
+
+# A while loop with the condition that as long as the counter is less than 150
+# it will keep printing hello
+# it's an infinite loop as there's there's no change in the counter variable
 
 # 2. Use string interpolation and the variable my_string = "Fred" to print to output the string "My name is Fred"
 
+# puts " My name is #{my_string}"
+
 # 3. Give one method to remove whitespace from user input in Ruby
+
+# chomp or strip
 
 # 4. What method would you use to get input from a user?
 
+# gets
+
 # 5. What result would you get in pry or IRB for this equation: 2 + 20 / 7 ?
+
+# result=4
 
 # 6. What result would you get in pry or IRB for this equation: 2 + 7 % 3 ?
 
+# result = 3
+
 # 7. Assign an empty string to a variable of any name
+
+# random_name = ""
 
 # 8. Describe two ways you can loop through an array?
 
+# use for loop or existing array methods like "each" or "each_with_index"
+
 # 9. How could you put the number 6 on the end of the array number_array?
+
+# number_array.push(6)
 
 # 11. What name do we give to the Ruby objects denoted by true and false?
 
+# Boolean
+
 # 12. Give a brief description of coercion in Ruby with an example?
+
+# Don't know this one, converting or evaluating data types?
 
 # 13. What does Ruby coerce nil to in an if statement?
 
+# false
+
 # 14.  Assign the string “hello” to a variable called some_var
+
+# some_var = "hello"
 
 # 15. Take the variable from Question 14, and use an inbuilt Ruby method to turn it into an array where each character in the string is now an element in the array.
 
-# 16.  Using that array that you have created (or assume you have an array of single characters), make a loop and in that loop print out each letter from the array.
+# new_array = []
+# some_var.each do |char|
+#  new_array.push(char)
+# end
 
-# 17. Name one method you could use to access the last element in an array 
+# 16.  Using that array that you have created (or assume you have an array of single characters), make a loop and in that loop print out each letter from the array.
+# new_array.each |char|
+# puts char
+# end
+
+# 17. Name one method you could use to access the last element in an array
+# pop
